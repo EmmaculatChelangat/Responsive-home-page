@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "lato", sans-serif;
+}
+.header{
+    background-image: linear-gradient(to right, rgba(0,0,0,0.514), rgba(0,0,0,0.363), rgba(0,0,0,0.452)), url(/img2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.header-text{
+    background-color: black;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.336);
+    padding: 15px 30px;
+    height: 80px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    float: left;
+    font-size: 35px;
+    font-family: "lobster", cursive;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.logo span{
+    color: rgb(134, 134, 255);
+}
+.nav{
+    line-height: 40px;
+    float: left;
+    margin: 0 0 0 60px;
+}
+.nav a{
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+
+}
+.nav a:hover{
+    color: rgb(134, 134, 255);
+}
+.form{
+    float: right;
+    position: relative;
+    right: 30px;
+    margin-left: 40px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.452);
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+.form::before{
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px 2px solid white;
+    width: 9px;
+    height: 9px;
+    top: 12px;
+    left: 14px;
+}
+.form::after{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 2px;
+    height: 8px;
+    top: 22px;
+    left: 26px;
+    transform: rotate(-44deg);
+    -webkit-transform: rotate(-44deg);
+    -moz-transform: rotate(-44deg);
+    -ms-transform: rotate(-44deg);
+    -o-transform: rotate(-44deg);
+}
+.form input{
+    position: absolute;
+    right: 42px;
+    padding: 11px 12px 9px 0;
+    border: none;
+    width: 210px;
+    border-radius: 2px 0 0 2px;
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    -ms-border-radius: 2px 0 0 2px;
+    -o-border-radius: 2px 0 0 2px;
+    height: 39px;
+    z-index: 100;
+
+}
+.hero{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    margin: 20px 10px;
+    text-align: center;
+}
+.hero-text{
+    font-size:  60px; 
+    font-weight: 700;
+    color: white;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    text-shadow: 0 10px 15px rgba(0, 0, 0, 0.336);
+}
+.hero-text span{
+    color: rgb(134, 134, 255);
+}
+.btn{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 5px 20px;
+    background-color: rgba(245, 90, 90, 0.904);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: all .5s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+}
+.btn:hover{
+    color: rgba(245, 90, 90, 0.904);
+    background-color: white;
+}
+
+@media all and (max-width){
+    .header{
+        position: relative;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.514), rgba(0,0,0,0.363), rgba(0,0,0,0.452)), url(/img1.jpg);
+        background-size: cover;
+    }
+    .header-text{
+        text-align: center;
+    }
+    .logo{
+        font-size: 25px;
+        line-height: 1;
+        margin-left: 90px;
+    }
+    .nav{
+        text-align: center;
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .nav a{
+        font-size: 13px;
+        padding-left: 10px;
+    }
+    .form{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        width: 40px;
+        height: 35px;
+    }
+    .form input{
+        width: 90px;
+        height: 30px;
+    }
+    .hero{
+        display: inline-block;
+    }
+    .hero-text{
+        font-size: 60px;
+        color: white;
+        padding: 50px 20px;
+    }
+    .btn{
+        font-size: 15px;
+        margin-left: 30px;
+        padding: 10px 20px;
+    }
+}
